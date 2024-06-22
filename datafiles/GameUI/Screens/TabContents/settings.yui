@@ -1,0 +1,63 @@
+file_type: resources
+
+import:
+  - shared.yui
+
+resources:
+
+  settings:
+    type: panel
+    layout: grid
+    grid:
+      rows: 2
+      columns: 3
+      row_spacing: 15
+      column_spacing: 15
+    elements:
+
+      - type: layout_example_section
+        header: "Vertical Alignment: Stretch"
+        content:
+
+          type: panel
+          flex: true
+          layout: horizontal
+          spacing: 5
+          padding: 10
+          border_color: $theme.resources.control_border
+          background: $theme.resources.control_bg
+          alignment: { v: stretch and top }
+
+          elements:
+            - type: layout_example_item
+              flex: true
+              content:
+                type: text
+                text: Flex = 1
+
+            - type: panel
+              layout: vertical
+              border_color: $theme.resources.control_bg_light
+              background: $theme.resources.control_bg
+              padding: [10, 5]
+              alignment: { h: center }
+              elements:
+                - type: text
+                  layout: vertical
+                  text: A nested\nvertical panel
+                  //flex: true
+
+                - type: button
+                  border_color: $theme.resources.control_bg_light
+                  content: Button 1
+
+                - type: button
+                  border_color: $theme.resources.control_bg_light
+                  content: Button 2
+              
+            - type: layout_example_item
+              content: Flex = 2
+              flex: 2
+
+            - type: layout_example_item
+              content: Auto Sized

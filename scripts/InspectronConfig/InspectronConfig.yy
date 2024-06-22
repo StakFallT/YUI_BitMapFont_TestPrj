@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"InspectronConfig",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"InspectronConfig",
+  "parent":{
+    "name":"YUI_BitmapFont_TestPrj",
+    "path":"YUI_BitmapFont_TestPrj.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
